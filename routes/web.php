@@ -39,3 +39,11 @@ Route::get('sobre-mi', 'AboutController@show')->name('about.show');
 
 Route::get('contacto', 'ContactController@show')->name('contact.show');
 Route::post('contacto', 'ContactController@send')->name('contact.send');
+
+/**
+ * =======
+ * VIRALS
+ * =======
+ */
+
+Route::get('chris-y-beli', 'ViralController@chris')->name('virals.chris-y-beli');
