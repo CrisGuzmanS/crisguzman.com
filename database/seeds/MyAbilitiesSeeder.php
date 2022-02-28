@@ -66,16 +66,16 @@ class MyAbilitiesSeeder extends Seeder
                 'level' => 'AVANZADO',
             ],
             [
+                'name' => 'PostgreSQL',
+                'level' => 'BÁSICO',
+            ],
+            [
                 'name' => 'Linux',
                 'level' => 'INTERMEDIO',
             ],
             [
                 'name' => 'Git',
                 'level' => 'INTERMEDIO',
-            ],
-            [
-                'name' => 'Docker',
-                'level' => 'BÁSICO',
             ],
         ]);
     }

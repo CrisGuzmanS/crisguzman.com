@@ -12,8 +12,8 @@
         <div class="col-12 col-md-8 mt-4" data-aos="fade-down" data-aos-delay="70" data-aos-anchor=".greeting">
             <h3 class="text-josefin text-center"><b>DESARROLLADOR <span class="text-purple">WEB</span></b></h3>
             <p>
-                Soy Cristian, un programador apasionado de 23 años.
-                Mi trabajo es crear sistemas web que permitan facilitar las tareas diarias
+                Soy Cristian, un programador apasionado de 24 años.
+                Mi pasión es crear sistemas web que permitan facilitar las tareas diarias
                 que pueden ser automatizadas, centralizadas y simplificadas. Entiendo la
                 importancia de sistematizar los procesos que un negocio tiene como punto clave
                 para su éxito en esta nueva era digital.
