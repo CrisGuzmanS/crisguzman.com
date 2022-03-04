@@ -19,14 +19,14 @@ class ProjectsSeeder extends Seeder
         // ====
 
         $project = Project::create([
-            'name' => 'Sistema de autoevaluación de repositorios de información académica y científica',
+            'name' => 'dPyx',
             'description' =>
             'dPyx es un sistema que ha sido instalado en alrededor de 5 instituciones, una de ellas a nivel nacional en Perú
             (CONCYTEC) que cuenta con la inscripción de más de 80 repositorios.
             
             Debido a la seguridad que ofrece, la interfaz gráfica amigable y la usabilidad que presenta, ha sido requerido por
-            las instituciones para la autoevaluación de sus repositorios institucionales. Esta herramienta permite ofrecer un 
-            panorama más amplio de las áreas de oportunidad de los sitemas de dichas instituciones.',
+            las instituciones para la autoevaluación de sus repositorios institucionales. Esta herramienta ofrece 
+            estadísticas de las áreas de oportunidad de los sitemas académicos las instituciones.',
             'path_cover_page' => 'img/cover_pages/portada_dpyx.jpg',
             'path_video' => 'videos/video_demostrativo_dpyx.mp4',
             'link' => 'https://demo.dpyx.net/',
@@ -67,14 +67,14 @@ class ProjectsSeeder extends Seeder
         $project->features()->attach([
             Feature::where('description', 'Escanéo QR')->first()->id,
         ]);
-        
+
 
         // ============
         // SOURCE LINK
         // ============
 
         $project = Project::create([
-            'name' => 'Sistema generador de estadisticas de DSpace',
+            'name' => 'Source Link',
             'description' =>
             'Source Link es una herramienta que permite obtener información en tiempo real de los
             repositorios DSpace a partir de una API desarrollada con python (usando el framework FLASK).
@@ -97,6 +97,51 @@ class ProjectsSeeder extends Seeder
         // =============
         // ARBYS
         // =============
+
+
+        $project = Project::create([
+            'name' => 'Juego de aviones',
+            'description' =>
+            'Es un juego sencillo que consite en disparar a naves extraterrestres 
+                para evitar que estas puedan invadir el planeta tierra. Las tecnologías 
+                empleadas para este proyecto fueron HTML, CSS, Javascript, así como jquery.',
+            'path_cover_page' => 'img/cover_pages/portada_juego_aviones.png',
+            'path_video' => 'videos/video_demostrativo_juego_aviones.mp4',
+            'date' => 'diciembre 2018'
+        ]);
+
+        $project->features()->attach([
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+            Feature::where('description', 'Creación de PDF')->first()->id,
+        ]);
+
+
+        // ============
+        // TO-DO (MERN)
+        // ============
+
+        // $project = Project::create([
+        //     'name' => 'To-Do MERN',
+        //     'description' =>
+        //     'Aplicación MERN FULL Stack (MongoDB, Express, React.js y NodeJs). 
+        //         Se encarga de realizar la administración de tareas pendientes que 
+        //         tenga el usuario mediante operaciones CRUD (create, read, update y delete) 
+        //         a la base de datos haciendo uso de peticiones HTTP al servidor.',
+        //     'path_cover_page' => 'img/cover_pages/portada_todo_app_mern_stack.jpg',
+        //     'path_video' => 'videos/video_demostrativo_mern_stack_to_do_app.mp4',
+        //     'date' => 'junio del 2019',
+        // ]);
+
+        // $project->features()->attach([
+        //     Feature::where('description', 'Notificaciones')->first()->id,
+        //     Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+        // ]);
+
+        // ====================
+        // REFACCIONARIA ZAPATA
+        // ====================
 
         $project = Project::create([
             'name' => 'ERP para Arbys',
@@ -124,30 +169,33 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Creación de PDF')->first()->id,
         ]);
 
-        // ============
-        // TO-DO (MERN)
-        // ============
+        // =========
+        // CREAECO
+        // =========
 
         $project = Project::create([
-            'name' => 'To-Do MERN',
+            'name' => 'creaECO',
             'description' =>
-            'Aplicación MERN FULL Stack (MongoDB, Express, React.js y NodeJs). 
-                Se encarga de realizar la administración de tareas pendientes que 
-                tenga el usuario mediante operaciones CRUD (create, read, update y delete) 
-                a la base de datos haciendo uso de peticiones HTTP al servidor.',
-            'path_cover_page' => 'img/cover_pages/portada_todo_app_mern_stack.jpg',
-            'path_video' => 'videos/video_demostrativo_mern_stack_to_do_app.mp4',
-            'date' => 'junio del 2019',
+            'creaECO es una plataforma para que los docentes realicen la adminsitración de
+             sus materias, identificando recursos, estrategias, propósitos, así como la definición de
+             unidades. Esta plataforma fué elaborada para la universidad BUAP.',
+            'path_cover_page' => 'img/cover_pages/portada_creaeco.png',
+            'path_video' => 'videos/video_demostrativo_creaeco.mp4',
+            'date' => 'marzo 2022'
         ]);
+
 
         $project->features()->attach([
-            Feature::where('description', 'Notificaciones')->first()->id,
-            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+            Feature::where('description', 'Pagos electrónicos')->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
         ]);
 
-        // ====================
-        // REFACCIONARIA ZAPATA
-        // ====================
+        // ===========
+        // MATERIAL UC
+        // ===========
 
         $project = Project::create([
             'name' => 'E-commerce para Refaccionaria Zapata Camiones Aeropuerto',
@@ -166,9 +214,19 @@ class ProjectsSeeder extends Seeder
             'date' => 'Julio del 2020',
         ]);
 
-        // =========
+        $project->features()->attach([
+            Feature::where('description', 'Pagos electrónicos')->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+        ]);
+
+
+
+        // ===========
         // TO-DO APP
-        // =========
+        // ===========
 
         $project = Project::create([
             'name' => 'To-do App',
@@ -185,36 +243,5 @@ class ProjectsSeeder extends Seeder
         $project->features()->attach([
             Feature::where('description', 'Animación digital')->first()->id,
         ]);
-
-        
-
-        $project->features()->attach([
-            Feature::where('description', 'Pagos electrónicos')->first()->id,
-            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
-            Feature::where('description', 'Envío de correo')->first()->id,
-            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
-            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
-        ]);
-
-        // ===========
-        // MATERIAL UC
-        // ===========
-
-        $project = Project::create([
-            'name' => 'Juego de aviones',
-            'description' =>
-            'Es un juego sencillo que consite en disparar a naves extraterrestres 
-                para evitar que estas puedan invadir el planeta tierra. Las tecnologías 
-                empleadas para este proyecto fueron HTML, CSS, Javascript, así como jquery.',
-            'path_cover_page' => 'img/cover_pages/portada_juego_aviones.png',
-            'path_video' => 'videos/video_demostrativo_juego_aviones.mp4',
-            'date' => 'diciembre 2018'
-        ]);
-
-        $project->features()->attach([
-            Feature::where('description', 'Animación digital')->first()->id,
-        ]);
-
-        
     }
 }

@@ -15,67 +15,67 @@ class MyAbilitiesSeeder extends Seeder
         DB::table('my_abilities')->insert([
             [
                 'name' => 'HTML',
-                'level' => 'AVANZADO',
+                'level' => '5 años',
             ],
             [
                 'name' => 'CSS',
-                'level' => 'INTERMEDIO',
+                'level' => '5 años',
             ],
             [
                 'name' => 'Javascript',
-                'level' => 'INTERMEDIO',
+                'level' => '5 años',
             ],
             [
                 'name' => 'PHP',
-                'level' => 'AVANZADO',
+                'level' => '4 años',
             ],
             [
                 'name' => 'Python',
-                'level' => 'INTERMEDIO',
+                'level' => '2 años',
             ],
             [
                 'name' => 'Bootstrap',
-                'level' => 'AVANZADO',
+                'level' => '5 años',
             ],
             [
                 'name' => 'Laravel',
-                'level' => 'AVANZADO',
+                'level' => '3 años',
             ],
             [
-                'name' => 'Express',
-                'level' => 'BÁSICO',
+                'name' => 'Django',
+                'level' => '6 meses',
+            ],
+            [
+                'name' => 'Flask',
+                'level' => '6 meses',
             ],
             [
                 'name' => 'Node.js',
-                'level' => 'BÁSICO',
-            ],
-            [
-                'name' => 'AJAX',
-                'level' => 'INTERMEDIO',
+                'level' => '6 meses',
             ],
             [
                 'name' => 'CPanel',
-                'level' => 'INTERMEDIO',
+                'level' => '1 año',
             ],
             [
                 'name' => 'MongoDB',
-                'level' => 'BÁSICO',
+                'level' => '6 meses',
             ],
             [
                 'name' => 'MySQL',
-                'level' => 'AVANZADO',
+                'level' => '5 años',
             ],
             [
                 'name' => 'PostgreSQL',
-                'level' => 'BÁSICO',
+                'level' => '1 año',
             ],
             [
                 'name' => 'Linux',
-                'level' => 'INTERMEDIO',
+                'level' => '3 años',
             ],
             [
                 'name' => 'Git',
-                'level' => 'INTERMEDIO',
+                'level' => '3 años',
             ],
         ]);
     }

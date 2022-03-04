@@ -16,7 +16,7 @@ class CreateMyAbilitiesTable extends Migration
         Schema::create('my_abilities', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
-            $table->enum('level', ['BÁSICO', 'INTERMEDIO', 'AVANZADO']);
+            $table->string('level');
             $table->timestamps();
         });
     }
