@@ -95,7 +95,7 @@ class ProjectsSeeder extends Seeder
         ]);
 
         // =============
-        // ARBYS
+        // JUEGO AVIONES
         // =============
 
 
@@ -118,29 +118,8 @@ class ProjectsSeeder extends Seeder
         ]);
 
 
-        // ============
-        // TO-DO (MERN)
-        // ============
-
-        // $project = Project::create([
-        //     'name' => 'To-Do MERN',
-        //     'description' =>
-        //     'Aplicación MERN FULL Stack (MongoDB, Express, React.js y NodeJs). 
-        //         Se encarga de realizar la administración de tareas pendientes que 
-        //         tenga el usuario mediante operaciones CRUD (create, read, update y delete) 
-        //         a la base de datos haciendo uso de peticiones HTTP al servidor.',
-        //     'path_cover_page' => 'img/cover_pages/portada_todo_app_mern_stack.jpg',
-        //     'path_video' => 'videos/video_demostrativo_mern_stack_to_do_app.mp4',
-        //     'date' => 'junio del 2019',
-        // ]);
-
-        // $project->features()->attach([
-        //     Feature::where('description', 'Notificaciones')->first()->id,
-        //     Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
-        // ]);
-
         // ====================
-        // REFACCIONARIA ZAPATA
+        // ARBYS
         // ====================
 
         $project = Project::create([
@@ -163,11 +142,14 @@ class ProjectsSeeder extends Seeder
         ]);
 
         $project->features()->attach([
+            Feature::where('description', 'Pagos electrónicos')->first()->id,
             Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
             Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
-            Feature::where('description', 'Creación de PDF')->first()->id,
         ]);
+
+
 
         // =========
         // CREAECO
@@ -186,15 +168,14 @@ class ProjectsSeeder extends Seeder
 
 
         $project->features()->attach([
-            Feature::where('description', 'Pagos electrónicos')->first()->id,
             Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
             Feature::where('description', 'Envío de correo')->first()->id,
-            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', 'Creación de PDF')->first()->id,
         ]);
 
         // ===========
-        // MATERIAL UC
+        // REFACCIONARIA ZAPATA
         // ===========
 
         $project = Project::create([
@@ -221,7 +202,6 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Gráficas (de reportes)')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
         ]);
-
 
 
         // ===========
