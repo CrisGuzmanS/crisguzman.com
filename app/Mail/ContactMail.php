@@ -36,6 +36,7 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('CORREO DESDE WWW.CRISGUZMAN.COM')
+            ->to(env('MAIL_FROM_ADDRESS', 'contacto@crisguzman.com'), 'Cristian Guzmán')
             ->from($this->mail)
             ->view('emails.contact', [
                 'name' => $this->name,
