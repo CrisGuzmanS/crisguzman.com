@@ -14,10 +14,9 @@ class CreateFeatureProjectTable extends Migration
     public function up()
     {
         Schema::create('feature_project', function (Blueprint $table) {
-            $table->id();
-            $table->string('feature_id');
-            $table->string('project_id');
-            $table->timestamps();
+            $table->bigIncrements('id'); // Puedes usar bigIncrements para la clave primaria de esta tabla pivote.
+            $table->unsignedBigInteger('feature_id');
+            $table->unsignedBigInteger('project_id');
         });
     }
 

@@ -27,7 +27,7 @@ class ProjectsSeeder extends Seeder
             que fungí con un rol de lider técnico, administrando a un equipo conformado por 5 personas
             capacitadas para la implementación del mismo.',
             'path_cover_page' => 'img/cover_pages/portada_proyecto_azul.png',
-            'path_video' => 'videos/vide_demostrproyecto-azul.mp4',
+            'path_video' => 'videos/video_demostrativo_proyecto_azul.mp4',
             'date' => 'Enero del 2024',
         ]);
 
@@ -38,15 +38,6 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
             Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
-        ]);
-
-        $project->features()->attach([
-            Feature::where('description', "Conexión con API's")->first()->id,
-            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
-            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
-            Feature::where('description', 'Envío de correo')->first()->id,
-            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
-            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
         ]);
 
         // ====
@@ -65,6 +56,15 @@ class ProjectsSeeder extends Seeder
             'path_video' => 'videos/video_demostrativo_source_link.mp4',
             'link' => 'http://34.235.253.220/',
             'date' => 'Junio del 2023',
+        ]);
+
+        $project->features()->attach([
+            Feature::where('description', "Conexión con API's")->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
         ]);
 
         // =============
@@ -94,8 +94,6 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Escanéo QR')->first()->id,
         ]);
 
-
-
         // ========
         // middle 1
         // ========
@@ -108,7 +106,7 @@ class ProjectsSeeder extends Seeder
             repositorios de forma interactiva, de forma masiva y con la mayor seguridad posible para la 
             toma de decisiones.",
             'path_cover_page' => 'img/cover_pages/portada_ktheia.png',
-            'path_video' => 'videos/ktheia.mp4',
+            'path_video' => 'videos/video_demostrativo_ktheia.mp4',
             'link' => 'https://demo.dpyx.net/',
             'date' => 'diciembre del 2023',
         ]);
@@ -118,14 +116,7 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
             Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
-        ]);
-
-        $project->features()->attach([
-            Feature::where('description', 'Pagos electrónicos')->first()->id,
-            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
-            Feature::where('description', 'Envío de correo')->first()->id,
-            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
-            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', "Conexión con API's")->first()->id,
         ]);
 
         // =============
@@ -170,10 +161,7 @@ class ProjectsSeeder extends Seeder
         ]);
 
         $project->features()->attach([
-            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
-            Feature::where('description', 'Envío de correo')->first()->id,
-            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
-            Feature::where('description', 'Creación de PDF')->first()->id,
+            Feature::where('description', 'Animación digital')->first()->id,
         ]);
 
         // =========
@@ -197,6 +185,7 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Envío de correo')->first()->id,
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
             Feature::where('description', 'Creación de PDF')->first()->id,
+            Feature::where('description', 'Interfaz UX/UI')->first()->id,
         ]);
 
         // ===========
@@ -250,6 +239,14 @@ class ProjectsSeeder extends Seeder
             'date' => 'enero del 2020',
         ]);
 
+        $project->features()->attach([
+            Feature::where('description', 'Pagos electrónicos')->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+        ]);
+
         // ====================
         // right 4
         // ====================
@@ -267,7 +264,10 @@ class ProjectsSeeder extends Seeder
         ]);
 
         $project->features()->attach([
-            Feature::where('description', 'Animación digital')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+            Feature::where('description', 'Creación de PDF')->first()->id,
         ]);
     }
 }
