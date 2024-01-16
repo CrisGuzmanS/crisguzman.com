@@ -60,7 +60,7 @@
                         ¡Hola! soy Cris.</p>
                     <p id="descripcion" data-aos="fade-left" data-aos-delay="90">
                         🌎 Desarrollador Web. |
-                        💻 Ingeniero en Computación.
+                        💻 Ingeniero de software.
 
                     </p>
                 </div>
