@@ -12,7 +12,7 @@
         <div class="col-12 col-md-8 mt-4" data-aos="fade-down" data-aos-delay="70" data-aos-anchor=".greeting">
             <h3 class="text-josefin text-center"><b>DESARROLLADOR <span class="text-purple">WEB</span></b></h3>
             <p>
-                ¡Hola, soy Cristian! 🚀 me considero un desarrollador apasionado. 
+                ¡Hola, soy Cristian! 🚀 Soy un desarrollador apasionado. 
                 Me encanta jugar con código y crear aplicaciones web que hagan la vida más fácil. 
                 Trabajar en equipo me llena de energía, y siempre ando en busca de soluciones 
                 innovadoras para hacer cosas asombrosas. ¡Hablemos de proyectos emocionantes 
