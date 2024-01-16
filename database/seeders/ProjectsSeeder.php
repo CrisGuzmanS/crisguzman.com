@@ -15,6 +15,39 @@ class ProjectsSeeder extends Seeder
      */
     public function run()
     {
+        // =============
+        // Proyecto azul
+        // =============
+
+        $project = Project::create([
+            'name' => 'Proyecto azul',
+            'description' => 'El proyecto azul es una iniciativa de una institución de universidad importante. Mi
+            participación consistió en la implementación de cursos de innovación en el emprendimiento 
+            para estudiantes a nivel latinoamérica. Es un proyecto a la medida en el 
+            que fungí con un rol de lider técnico, administrando a un equipo conformado por 5 personas
+            capacitadas para la implementación del mismo.',
+            'path_cover_page' => 'img/cover_pages/portada_dpyx.jpg',
+            'path_video' => 'videos/vide_demostrproyecto-azul.mp4',
+            'date' => 'Enero del 2024',
+        ]);
+
+        $project->features()->attach([
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', "Conexión con API's")->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+        ]);
+
+        $project->features()->attach([
+            Feature::where('description', "Conexión con API's")->first()->id,
+            Feature::where('description', 'Gráficas (de reportes)')->first()->id,
+            Feature::where('description', 'Importacion / Exportacion Excel')->first()->id,
+            Feature::where('description', 'Envío de correo')->first()->id,
+            Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
+            Feature::where('description', 'Almacenamiento en tiempo real')->first()->id,
+        ]);
 
         // ====
         // DPYX
@@ -22,8 +55,7 @@ class ProjectsSeeder extends Seeder
 
         $project = Project::create([
             'name' => 'dPyx',
-            'description' =>
-            'dPyx es un sistema que ha sido instalado en alrededor de 5 instituciones, una de ellas a nivel nacional en Perú
+            'description' => 'dPyx es un sistema que ha sido instalado en alrededor de 5 instituciones, una de ellas a nivel nacional en Perú
             (CONCYTEC) que cuenta con la inscripción de más de 80 repositorios.
             
             Debido a la seguridad que ofrece, la interfaz gráfica amigable y la usabilidad que presenta, ha sido requerido por
@@ -71,22 +103,22 @@ class ProjectsSeeder extends Seeder
         ]);
 
 
-        // ============
-        // SOURCE LINK
-        // ============
+
+        // ======
+        // KTheia
+        // ======
 
         $project = Project::create([
-            'name' => 'Source Link',
-            'description' =>
-            'Source Link es una herramienta que permite obtener información en tiempo real de los
-            repositorios DSpace a partir de una API desarrollada con python (usando el framework FLASK).
-            Una vez que obtiene información de valor como vistas y descargas, esta es agrupada por país, item,
-            comunidad y autor, para identificar cuales son las publicaciones más destacadas que ha tenido el repositorio
-            institucional en cuestión.',
-            'path_cover_page' => 'img/cover_pages/portada_source_link.jpg',
-            'path_video' => 'videos/video_demostrativo_source_link.mp4',
-            'link' => 'http://34.235.253.220/',
-            'date' => 'Mayo del 2021',
+            'name' => 'KTheia',
+            'description' => "KTheia es una plataforma que permite a las instituciones académicas 
+            de universidades gestionar su información generada por plataformas externas como Scopus, 
+            Publons, Scielo, Datacite, ORCID, etc (mediante api's) gestionar la información de sus 
+            repositorios de forma interactiva, de forma masiva y con la mayor seguridad posible para la 
+            toma de decisiones.",
+            'path_cover_page' => 'img/cover_pages/portada_dpyx.jpg',
+            'path_video' => 'videos/ktheia.mp4',
+            'link' => 'https://demo.dpyx.net/',
+            'date' => 'diciembre del 2023',
         ]);
 
         $project->features()->attach([
@@ -151,7 +183,23 @@ class ProjectsSeeder extends Seeder
             Feature::where('description', 'Seguridad con perfiles de acceso')->first()->id,
         ]);
 
+        // ============
+        // SOURCE LINK
+        // ============
 
+        $project = Project::create([
+            'name' => 'Source Link',
+            'description' =>
+            'Source Link es una herramienta que permite obtener información en tiempo real de los
+            repositorios DSpace a partir de una API desarrollada con python (usando el framework FLASK).
+            Una vez que obtiene información de valor como vistas y descargas, esta es agrupada por país, item,
+            comunidad y autor, para identificar cuales son las publicaciones más destacadas que ha tenido el repositorio
+            institucional en cuestión.',
+            'path_cover_page' => 'img/cover_pages/portada_source_link.jpg',
+            'path_video' => 'videos/video_demostrativo_source_link.mp4',
+            'link' => 'http://34.235.253.220/',
+            'date' => 'Junio del 2023',
+        ]);
 
         // =========
         // CREAECO

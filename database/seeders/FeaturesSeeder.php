@@ -56,6 +56,10 @@ class FeaturesSeeder extends Seeder
                 'description' => 'Notificaciones',
                 'icon' => '<i class="fa fa-commenting" aria-hidden="true"></i>'
             ],
+            [
+                'description' => "Conexión con API's",
+                'icon' => '<i class="fa fa-commenting" aria-hidden="true"></i>'
+            ],
         ]);
     }
 }
