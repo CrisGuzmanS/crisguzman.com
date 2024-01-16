@@ -58,7 +58,11 @@ class FeaturesSeeder extends Seeder
             ],
             [
                 'description' => "Conexión con API's",
-                'icon' => '<i class="fa fa-commenting" aria-hidden="true"></i>'
+                'icon' => '<i class="fa-solid fa-right-left"></i>'
+            ],
+            [
+                'description' => "Interfaz UX/UI",
+                'icon' => '<i class="fa-solid fa-display"></i>'
             ],
         ]);
     }
