@@ -79,6 +79,18 @@ class MyAbilitiesSeeder extends Seeder
                 'name' => 'Git',
                 'level' => '3 años',
             ],
+            [
+                'name' => 'Angular',
+                'level' => '3 meses',
+            ],
+            [
+                'name' => 'Spring',
+                'level' => '3 meses',
+            ],
+            [
+                'name' => 'SOLR',
+                'level' => '3 meses',
+            ],
         ]);
     }
 }

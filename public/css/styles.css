@@ -224,20 +224,23 @@ footer{
     letter-spacing: 1px;
 }
 
-#html{background: #f16524}
-#css{background: #00a0e4}
-#javascript{background: #f7bc18}
-#php{background: #787cb4}
-#python{background: #3775a9}
+#angular{background: #de002d}
 #bootstrap{background: #69419d}
-#express{background: #363636}
+#css{background: #00a0e4}
 #cpanel{background: #dc3135}
-#nodejs{background: #8cc03d}
 #django{background: #09719f}
+#express{background: #363636}
+#flask{background: #f20101}
+#git{background: #313131;}
+#html{background: #f16524}
+#javascript{background: #f7bc18}
+#laravel{background: #ff2d20;}
+#linux{background: #0175c3}
 #mongodb{background: #459c45}
 #mysql{background: #e58f00}
-#flask{background: #f20101}
-#linux{background: #0175c3}
-#laravel{background: #ff2d20;}
-#git{background: #313131;}
+#nodejs{background: #8cc03d}
 #postgresql{background: #099cec;}
+#php{background: #787cb4}
+#python{background: #3775a9}
+#solr{background: #da4327;}
+#spring{background: #5fb92e}
