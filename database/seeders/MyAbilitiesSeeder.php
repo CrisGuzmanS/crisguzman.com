@@ -69,7 +69,7 @@ class MyAbilitiesSeeder extends Seeder
             ],
             [
                 'name' => 'PostgreSQL',
-                'level' => '1 año',
+                'level' => '2 año',
             ],
             [
                 'name' => 'Linux',
